@@ -1,0 +1,94 @@
+<!DOCTYTPE html>
+<html>
+<head>
+  <title>Old School Meme Page</title>
+  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/style.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/navcanvas.css')}}">
+  <script src="{{url_for('static', filename='js/slide.js')}}"></script>
+
+    <div class="navbar">
+      <a href="{{url_for('home')}}">Home</a>
+      <a href="{{url_for('archive')}}">The Classical Archive</a>
+      <a href="{{url_for('creator')}}">Creator</a>
+      <a href="{{url_for('loginpage')}}">Log In</a>
+  </div>
+
+  </head>
+  <body>
+
+
+    <h1>Old School Meme Generator</h1>
+
+
+
+<img id="meme" src="/static/images/accepted.jpg" alt="the imgg" style="float:bottom ; width:420px;">
+<p style="font-size: 20px">
+Are you up for the task?</p>
+
+<h2>What is a meme though</h2>
+<p>Wikipedia defines meme as "An Internet meme, commonly known as just a meme
+  is an activity, concept, catchphrase, or piece of media that spreads, often as mimicry or for humorous purposes, via the internet"</p>
+  <h3 style="colour: white">Below is a slideshow of some of my personal favourite memes</h3>
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+      <img src="/static/images/2spooky4me.jpg" style="width:600px">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+      <img src="/static/images/a-dead-meme-came-back.jpg" style="width:600px">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">3/ 6</div>
+      <img src="/static/images/ahh-turtles.jpg" style="width:600px">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/oqqa15VtmxI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">5/ 6</div>
+      <img src="/static/images/bamboozled-again_2.jpg" style="width:600px">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">6/ 6</div>
+      <img src="/static/images/best-one.jpg" style="width:600px">
+  </div>
+
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <!-- Image text -->
+  <div class="caption-container">
+
+    <p id="caption"></p>
+
+  </div>
+
+  <!-- Thumbnail images -->
+  <div class="srow">
+    <div class="scolumn">
+
+      <img class="demo cursor" src="/static/images/2spooky4me.jpg" style="width:100%; height: 240px" onclick="currentSlide(1)" alt="A Classic Rage Comic">
+    </div>
+    <div class="scolumn">
+      <img class="demo cursor" src="/static/images/a-dead-meme-came-back.jpg" style="width:100% ; height: 240px" onclick="currentSlide(2)" alt="Savage Spongebob meme - a 2016 favourite">
+    </div>
+    <div class="scolumn">
+      <img class="demo cursor" src="/static/images/ahh-turtles.jpg" style="width:100% ; height: 240px" onclick="currentSlide(3)" alt="Turtle Stuff">
+    </div>
+    <div class="scolumn">
+      <img class="demo cursor" src="/static/images/bcat.gif" style="width:100% ; height: 240px" onclick="currentSlide(4)" alt="Bongo Cat">
+    </div>
+    <div class="scolumn">
+      <img class="demo cursor" src="/static/images/bamboozled-again_2.jpg" style="width:100% ; height: 240px" onclick="currentSlide(5)" alt="The 'Cold Ones' meme lasted ages">
+    </div>
+    <div class="scolumn">
+      <img class="demo cursor" src="/static/images/best-one.jpg" style="width:100% ; height: 240px" onclick="currentSlide(6)" alt="One of those days">
+    </div>
+  </div>
+  </body>
+
+</html>

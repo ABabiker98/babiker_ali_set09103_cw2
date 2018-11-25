@@ -1,0 +1,43 @@
+<!DOCTYTPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/style.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/navcanvas.css')}}">
+  <script src="{{url_for('static', filename='js/canvas.js')}}"></script>
+
+  <title>Meme Creator</title>
+  <div class="navbar">
+    <a href="{{url_for('home')}}">Home</a>
+    <a href="{{url_for('archive')}}">The Classical Archive</a>
+    <a href="{{url_for('creator')}}">Creator</a>
+    <a href="{{url_for('loginpage')}}">Log In</a>
+</div>
+  </head>
+  <body>
+
+
+
+<h1>Make me a spicy meme<h1>
+
+<img id="meme" style="display: none;" src="https://i.kym-cdn.com/photos/images/original/001/178/461/a4b.png" alt="the imgg">
+
+<canvas id="myCanvas">
+
+</canvas>
+<div class="scaletool">
+  <input id="fileInput" name="imageLoader" type="file">
+</div>
+<div class="scaletool">
+  Scale:<input id="scale" max="4" min="0.1" step="0.01" type="range" value="1" />
+</div>
+<div class="scaletool">
+  Rotate: <input id="rotate" max="180" min="-180" step="1" type="range" value="0" />
+</div>
+<div class="scaletool">
+  <p>Top Text</p>
+  <input id="top-text" style="width: 80%;" value="Now Listen Here" type="text">
+</div>
+<div class="scaletool">
+  <p>Bottom text</p>
+  <input id="bottom-text" style="width: 80%;" value="Here's a little lesson in trickery" type="text">
+</div>
